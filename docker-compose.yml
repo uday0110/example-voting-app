@@ -12,7 +12,7 @@ services:
     volumes:
      - ./vote:/app
     ports:
-      - "5000:80"
+      - "2000:80"
 
   result:
     build: ./result
@@ -23,7 +23,7 @@ services:
     volumes:
       - ./result:/app
     ports:
-      - "5001:80"
+      - "2001:80"
       - "5858:5858"
 
   worker:
